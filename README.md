@@ -11,12 +11,12 @@
 
 **LibCoopt**  provides a input interface for the objective function and its gradient function which can be customized by the user according to the specific problem. In other words, to use LibCoopt the users only need to design the problem dependent objective function and deduct the corresponding gradient function. 
 
-LibCoopt is mainly implemented by Matlab script, with some computationally intensive part implemented by Mex files. 
+**LibCoopt** is mainly implemented by Matlab script, with some computationally intensive part implemented by Mex files. 
 The core Matlab function is 
 
-*Solution = Coopt(@F, @nF, Data, Para)*
+**Solution = Coopt(@F, @nF, Data, Para)**
 
-where "Solution" is the final combinatorial optimization solution including the minimal point, objective value, and running time. The first two inputs *@F* and *@nF* are the function handles of the customized objective function and its gradient function. The third input *Data* is the problem related data. And *Para* is the parameter structure. 
+where *Solution* is the final combinatorial optimization solution including the minimal point, objective value, and running time. The first two inputs *@F* and *@nF* are the function handles of the customized objective function and its gradient function. The third input *Data* is the problem related data. And *Para* is the parameter structure. 
 
 ## Installation
 Add all files to your directory.
