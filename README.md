@@ -15,10 +15,9 @@ For different combinatorial optimization problems on partial permutation matrice
 LibCoopt is mainly implemented by Matlab script, with some computationally intensive part implemented by Mex files. 
 
 The core Matlab function is 
-\begin{center}
-\verb"Solution = Coopt(@F, @nF, Data, Para)"
-\end{center}
-where \verb"Solution" is the final combinatorial optimization solution including the minimal point, objective value, and running time. The first two inputs \verb"@F" and \verb"@nF" are the function handles of the customized objective function and its gradient function. The third input \verb"Data" is the problem related data. And \verb"Para" is the parameter structure. 
+*Solution = Coopt(@F, @nF, Data, Para)*
+
+where "Solution" is the final combinatorial optimization solution including the minimal point, objective value, and running time. The first two inputs \verb"@F" and \verb"@nF" are the function handles of the customized objective function and its gradient function. The third input \verb"Data" is the problem related data. And \verb"Para" is the parameter structure. 
 
 ## Installation
 Add all files to your  directory.
@@ -29,12 +28,15 @@ Here is a simple example.
 
 ```matlab
 # LibCoopt for GMAD
+solution1=run_Coopt_GMAD('toy_GMAD’);
 # LibCoopt for GMAF
+solution2=run_Coopt_GMAD('toy_GMAF’);
 # LibCoopt for QAP
+solution3=run_Coopt_GMAD('toy_QAP’);
+```
 
 
 ## Reference
-```
 [1] Z.-Y. Liu, H. Qiao, Gnccpgraduated nonconvexityand concavity procedure, Pattern Analysis and Ma- 85
 chine Intelligence, IEEE Transactions on 36 (6) (2014) 1258–1267. 86
 [2] M. Zaslavskiy, F. Bach, J.-P. Vert, A path following algorithm for graph matching, in: Image and Signal 87
