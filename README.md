@@ -9,12 +9,7 @@
 
 ![Framework](https://github.com/RowenaWong/LibCoopt/blob/master/doc/framework.png)
 
-**HDIdx** has three main modules: 1) `Encoder` which can compress the original feature vectors into compact binary hash codes, 2) `Indexer` which can index the database items and search approximate nearest neighbor for a given query item, and 3) `Storage` module which encapsulates the underlying data storage, which can be memory or NoSQL database like LMDB, for the `Indexer`.
-
-The current version implements following feature compressing algorithms: 
-
-- `Product Quantization`[1].
-- `Spectral Hashing`[2].
+For different combinatorial optimization problems on partial permutation matrices, **LibCoopt**  provides a input interface for the objective function and its gradient function which can be customized by the user according to the specific problem. In other words, to use LibCoopt the users only need to design the problem dependent objective function and deduct the corresponding gradient function. It is these customized functions that takes the problem related data as input, while LibCoopt is not directly related to the data. That is why LipCoopt is claimed to be a general and convenient tool for combinatorial optimization on partial permutation matrices. 
 
 To use HDIdx, first you should learn a `Encoder` from some learning vectors.
 Then you can map the base vectors into hash codes using the learned `Encoder` and building indexes over these hash codes by an `Indexer`, which will write the indexes to the specified storage medium.
