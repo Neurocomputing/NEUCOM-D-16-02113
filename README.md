@@ -7,7 +7,7 @@
 
 ## Architecture
 
-![Framework](https://raw.githubusercontent.com/wanji/hdidx/master/doc/framework.png)
+![Framework](https://github.com/RowenaWong/LibCoopt/blob/master/doc/framework.png)
 
 **HDIdx** has three main modules: 1) `Encoder` which can compress the original feature vectors into compact binary hash codes, 2) `Indexer` which can index the database items and search approximate nearest neighbor for a given query item, and 3) `Storage` module which encapsulates the underlying data storage, which can be memory or NoSQL database like LMDB, for the `Indexer`.
 
