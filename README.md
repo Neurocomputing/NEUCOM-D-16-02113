@@ -37,14 +37,19 @@ solution3=run_Coopt_GMAD('toy_QAP');
 ## Reference
 [1] Z.-Y. Liu, H. Qiao, Gnccpgraduated nonconvexityand concavity procedure, Pattern Analysis and Ma- 85
 chine Intelligence, IEEE Transactions on 36 (6) (2014) 1258–1267. 86
+
 [2] M. Zaslavskiy, F. Bach, J.-P. Vert, A path following algorithm for graph matching, in: Image and Signal 87
 Processing, Springer, 2008, pp. 329–337. 88
+
 [3] Z.-Y. Liu, H. Qiao, L. Xu, An extended path following algorithm for graph-matching problem, Pattern 89
 Analysis and Machine Intelligence, IEEE Transactions on 34 (7) (2012) 1451–1456. 90
+
 [4] X. Yang, H. Qiao, Z. Liu, Outlier robust point correspondence based on GNCCP, Pattern Recognition 91
 Letters 55 (0) (2015) 8–14. 92
+
 [5] Z. Liu, H. Qiao, A convex-concave relaxation procedure based subgraph matching algorithm., in: ACML, 93
 2012, pp. 237–252. 94
+
 [6] R. E. Burkard, S. E. Karisch, F. Rendl, Qaplib–a quadratic assignment problem library, Journal of 95
 Global optimization 10 (4) (1997) 391–403
 ```
