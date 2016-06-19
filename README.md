@@ -11,85 +11,40 @@
 
 For different combinatorial optimization problems on partial permutation matrices, **LibCoopt**  provides a input interface for the objective function and its gradient function which can be customized by the user according to the specific problem. In other words, to use LibCoopt the users only need to design the problem dependent objective function and deduct the corresponding gradient function. It is these customized functions that takes the problem related data as input, while LibCoopt is not directly related to the data. That is why LipCoopt is claimed to be a general and convenient tool for combinatorial optimization on partial permutation matrices. 
 
-To use HDIdx, first you should learn a `Encoder` from some learning vectors.
-Then you can map the base vectors into hash codes using the learned `Encoder` and building indexes over these hash codes by an `Indexer`, which will write the indexes to the specified storage medium.
-When a query vector comes, it will be mapped to hash codes by the same `Encoder` and the `Indexer` will find the similar items to this query vector.
 
+LibCoopt is mainly implemented by Matlab script, with some computationally intensive part implemented by Mex files. 
+
+The core Matlab function is 
+\begin{center}
+\verb"Solution = Coopt(@F, @nF, Data, Para)"
+\end{center}
+where \verb"Solution" is the final combinatorial optimization solution including the minimal point, objective value, and running time. The first two inputs \verb"@F" and \verb"@nF" are the function handles of the customized objective function and its gradient function. The third input \verb"Data" is the problem related data. And \verb"Para" is the parameter structure. 
 
 ## Installation
-
-**HDIdx** can be installed by `pip`:
-
-```bash
-[sudo] pip install hdidx
-```
-
-By default, **HDIdx** use kmeans algorithm provided by [*SciPy*](http://www.scipy.org/). To be more efficient, you can install python extensions of [*OpenCV*](http://opencv.org/), which can be installed via `apt-get` on Ubuntu. For other Linux distributions, e.g. CentOS, you need to compile it from source.
-
-```bash
-[sudo] apt-get install python-opencv
-```
-
-**HDIdx** will use [*OpenCV*](http://opencv.org/) automatically if it is available.
-
-### Windows Guide
-
-General dependencies:
-
-- [Anaconda](https://store.continuum.io/cshop/anaconda/)
-- [Microsoft Visual C++ Compiler for Python](http://www.microsoft.com/en-us/download/details.aspx?id=44266)
-
-After install the above mentioned software, download [`stdint.h`](http://msinttypes.googlecode.com/svn/trunk/stdint.h) and put it under the `include` folder of Visual C++, e.g. `C:\Users\xxx\AppData\Local\Programs\Common\Microsoft\Visual C++ for Python\9.0\VC\include`. Then hdidx can be installed by `pip` from the *Anaconda Command Prompt*.
+Add all files to your  directory.
 
 ## Example
 
-Here is a simple example. See this [notebook](http://nbviewer.ipython.org/gist/wanji/c08693f06ef744feef50) for more examples.
+Here is a simple example. 
 
-```python
-# import necessary packages
+```matlab
+# LibCoopt for GMAD
+# LibCoopt for GMAF
+# LibCoopt for QAP
 
-import hdidx
-import numpy as np
-
-# generating sample data
-ndim = 16      # dimension of features
-ndb = 10000    # number of dababase items
-nqry = 10      # number of queries
-
-X_db = np.random.random((ndb, ndim))
-X_qry = np.random.random((nqry, ndim))
-
-# create Product Quantization Indexer
-idx = hdidx.indexer.IVFPQIndexer()
-# build indexer
-idx.build({'vals': X_db, 'nsubq': 8})
-# add database items to the indexer
-idx.add(X_db)
-# searching in the database, and return top-10 items for each query
-ids, dis = idx.search(X_qry, 10)
-print ids
-print dis
-```
-
-## Citation
-
-Please cite the following paper if you use this library:
-
-```
-@article{wan2015hdidx,
-  title={HDIdx: High-Dimensional Indexing for Efficient Approximate Nearest Neighbor Search},
-  author={Wan, Ji and Tang, Sheng and Zhang, Yongdong and Li, Jintao and Wu, Pengcheng and Hoi, Steven CH},
-  journal={arXiv preprint arXiv:1510.01991},
-  year={2015}
-}
-```
 
 ## Reference
 ```
-[1] Jegou, Herve, Matthijs Douze, and Cordelia Schmid.
-    "Product quantization for nearest neighbor search."
-    Pattern Analysis and Machine Intelligence, IEEE Transactions on 33.1 (2011): 117-128.
-[2] Weiss, Yair, Antonio Torralba, and Rob Fergus.
-    "Spectral hashing."
-    In Advances in neural information processing systems, pp. 1753-1760. 2009.
+[1] Z.-Y. Liu, H. Qiao, Gnccpgraduated nonconvexityand concavity procedure, Pattern Analysis and Ma- 85
+chine Intelligence, IEEE Transactions on 36 (6) (2014) 1258–1267. 86
+[2] M. Zaslavskiy, F. Bach, J.-P. Vert, A path following algorithm for graph matching, in: Image and Signal 87
+Processing, Springer, 2008, pp. 329–337. 88
+[3] Z.-Y. Liu, H. Qiao, L. Xu, An extended path following algorithm for graph-matching problem, Pattern 89
+Analysis and Machine Intelligence, IEEE Transactions on 34 (7) (2012) 1451–1456. 90
+[4] X. Yang, H. Qiao, Z. Liu, Outlier robust point correspondence based on GNCCP, Pattern Recognition 91
+Letters 55 (0) (2015) 8–14. 92
+[5] Z. Liu, H. Qiao, A convex-concave relaxation procedure based subgraph matching algorithm., in: ACML, 93
+2012, pp. 237–252. 94
+[6] R. E. Burkard, S. E. Karisch, F. Rendl, Qaplib–a quadratic assignment problem library, Journal of 95
+Global optimization 10 (4) (1997) 391–403
 ```
