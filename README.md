@@ -28,9 +28,9 @@ Here is a simple example.
 # LibCoopt for GMAD
 solution1=run_Coopt_GMAD('toy_GMAD');
 # LibCoopt for GMAF
-solution2=run_Coopt_GMAD('toy_GMAF');
+solution2=run_Coopt_GMAF('toy_GMAF');
 # LibCoopt for QAP
-solution3=run_Coopt_GMAD('toy_QAP');
+solution3=run_Coopt_QAP('toy_QAP');
 ```
 
 ## Reference
