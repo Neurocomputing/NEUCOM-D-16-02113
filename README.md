@@ -1,5 +1,5 @@
 # LibCoopt： A Library for Combinatorial Optimization on Partial Permutation Matrices
-[![license](https://img.shields.io/pypi/l/hdidx.svg?style=flat-square)](https://raw.githubusercontent.com/wanji/hdidx/master/LICENSE.md)
+[![license]](https://github.com/RowenaWong/LibCoopt/blob/master/LICENSE)
 
 ## What is **LibCoopt**?
 
