@@ -1,5 +1,4 @@
 # LibCoopt： A Library for Combinatorial Optimization on Partial Permutation Matrices
-[![license]](https://github.com/RowenaWong/LibCoopt/blob/master/LICENSE)
 
 ## What is **LibCoopt**?
 
