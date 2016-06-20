@@ -1,4 +1,4 @@
-function pairdata= generate_PairData (Chrdata1,Chrdata2,Noutlier)
+function [K,ng,nh,NumGT]= generate_ChrPair (Chrdata1,Chrdata2,Noutlier)
 % Generate Adjacent matrix for character
 % combine distance and direction information (alfa1,alfa 2)
 %------------------------ --------------------------------------------------
@@ -6,10 +6,13 @@ function pairdata= generate_PairData (Chrdata1,Chrdata2,Noutlier)
 %       Chrdata1: character data
 %       Chrdata2: character data
 %                 must have the following field
+%       Noutlier: in Chrdata2
 %           
-% 
-% OUTPUT 
-%       
+% OUTPUT :
+%       K; similairity matrix
+%       ng: num nodes of chr1
+%       nh: num nodes of chr2
+%       NumGT: ground truth
 %--------------------------------------------------------------------------
 N = Chrdata1.N; % ground truth 
 % choose outliers randomly
@@ -87,12 +90,10 @@ end
 % affiniity matrix
 K1 = K1.*GG; K2 = K2.*GG;
 K = K1 + K2;
-pairdata.Ag=Ag;
-pairdata.Ah=Ah
-pairdata.K=K;
-pairdata.NumGT=NumGT;
-pairdata.ng=N1;
-pairdata.nh=N2;
+% .Ag=Ag;
+% .Ah=Ah
+ng=N1;
+nh=N2;
 end 
 
 
