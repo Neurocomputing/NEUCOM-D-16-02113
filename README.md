@@ -10,7 +10,6 @@
 ![Framework](https://github.com/RowenaWong/LibCoopt/blob/master/doc/framework.png)
 
 **LibCoopt**  provides a input interface for the objective function and its gradient function which can be customized by the user according to the specific problem. In other words, to use LibCoopt the users only need to design the problem dependent objective function and deduct the corresponding gradient function. 
-
 **LibCoopt** is mainly implemented by Matlab script, with some computationally intensive part implemented by Mex files. 
 The core Matlab function is 
 
