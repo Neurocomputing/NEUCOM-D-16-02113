@@ -25,17 +25,17 @@ Add all files to your directory.
 Here is a simple example. 
 
 ```matlab
-# demo:LibCoopt for GMAD
+# demo-LibCoopt of GMAD
 solution1=run_Coopt_GMAD('toy_GMAD');
-# demo:LibCoopt for GMAF
+# demo-LibCoopt of GMAF
 solution2=run_Coopt_GMAF('toy_GMAF');
-# demo:LibCoopt for QAP
+# demo-LibCoopt of QAP
 solution3=run_Coopt_QAP('toy_QAP');
-# experiment on synthetic graphs matching for GMAD
+# experiment on synthetic graphs matching of GMAD
 exp_GMAD(root_path) % your root_path of LibCoopt
-# experiment on Chinese characters matching for GMAF
+# experiment on Chinese characters matching of GMAF
 exp_GMAD(root_path)
-# experiment on QAPlib  datasets for QAP
+# experiment on QAPlib  datasets of QAP
 exp_GMAD(root_path)
 ```
 ## Reference
