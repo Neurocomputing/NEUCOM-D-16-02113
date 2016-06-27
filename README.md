@@ -1,5 +1,4 @@
 # LibCoopt： A Library for Combinatorial Optimization on Partial Permutation Matrices
-[![license](https://img.shields.io/pypi/l/hdidx.svg?style=flat-square)](https://raw.githubusercontent.com/wanji/hdidx/master/LICENSE.md)
 
 ## What is **LibCoopt**?
 
@@ -25,30 +24,37 @@ Add all files to your directory.
 Here is a simple example. 
 
 ```matlab
-# LibCoopt for GMAD
+# demo-LibCoopt of GMAD
 solution1=run_Coopt_GMAD('toy_GMAD');
-# LibCoopt for GMAF
+# demo-LibCoopt of GMAF
 solution2=run_Coopt_GMAF('toy_GMAF');
-# LibCoopt for QAP
+# demo-LibCoopt of QAP
 solution3=run_Coopt_QAP('toy_QAP');
+# experiment on synthetic graphs matching of GMAD
+exp_GMAD(root_path) % your root_path of LibCoopt
+# experiment on Chinese characters matching of GMAF
+exp_GMAD(root_path)
+# experiment on QAPlib  datasets of QAP
+exp_GMAD(root_path)
 ```
-
 ## Reference
-[1] Z.-Y. Liu, H. Qiao, Gnccpgraduated nonconvexityand concavity procedure, Pattern Analysis and Ma- 85
-chine Intelligence, IEEE Transactions on 36 (6) (2014) 1258–1267. 86
-
-[2] M. Zaslavskiy, F. Bach, J.-P. Vert, A path following algorithm for graph matching, in: Image and Signal 87
-Processing, Springer, 2008, pp. 329–337. 88
-
-[3] Z.-Y. Liu, H. Qiao, L. Xu, An extended path following algorithm for graph-matching problem, Pattern 89
-Analysis and Machine Intelligence, IEEE Transactions on 34 (7) (2012) 1451–1456. 90
-
-[4] X. Yang, H. Qiao, Z. Liu, Outlier robust point correspondence based on GNCCP, Pattern Recognition 91
-Letters 55 (0) (2015) 8–14. 92
-
-[5] Z. Liu, H. Qiao, A convex-concave relaxation procedure based subgraph matching algorithm., in: ACML, 93
-2012, pp. 237–252. 94
-
-[6] R. E. Burkard, S. E. Karisch, F. Rendl, Qaplib–a quadratic assignment problem library, Journal of 95
-Global optimization 10 (4) (1997) 391–403
+[1] Z.-Y. Liu, H.~Qiao, Gnccp—graduated nonconvexityand concavity procedure,
+  Pattern Analysis and Machine Intelligence, IEEE Transactions on 36~(6) (2014)
+  1258--1267.
+  
+[2] M.~Zaslavskiy, F.~Bach, J.-P. Vert, A path following algorithm for graph
+  matching, in: Image and Signal Processing, Springer, 2008, pp. 329--337.
+  
+[3]Z.-Y. Liu, H.~Qiao, L.~Xu, An extended path following algorithm for
+  graph-matching problem, Pattern Analysis and Machine Intelligence, IEEE
+  Transactions on 34~(7) (2012) 1451--1456.
+  
+[4] X.~Yang, H.~Qiao, Z.~Liu, Outlier robust point correspondence based on {GNCCP},
+  Pattern Recognition Letters 55~(0) (2015) 8--14.
+  
+[5] Z.~Liu, H.~Qiao, A convex-concave relaxation procedure based subgraph matching
+  algorithm., in: ACML, 2012, pp. 237--252.
+  
+[6] R.~E. Burkard, S.~E. Karisch, F.~Rendl, Qaplib--a quadratic assignment problem
+  library, Journal of Global optimization 10~(4) (1997) 391--403.
 ```
