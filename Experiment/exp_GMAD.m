@@ -18,7 +18,7 @@ function exp_GMAD(varargin)
         fprintf('Noise=%f\n',noise(n));
         sigma=noise(n);
         for i=1:rep
-            [~,Ag,Ah,ng,nh,numGT]=Sdata(N,outN,sigma);
+            [~,Ag,Ah,ng,nh,numGT]=SData(N,outN,sigma);
             data_name=['Sdata_' num2str(i),'vs',num2str(j),'.mat'];
             save(data_name,'Ag','Ah','ng','nh','numGT');
             result=run_Coopt_GMAD(data_name);
