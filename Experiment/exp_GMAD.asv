@@ -30,9 +30,8 @@ function exp_GMAD(varargin)
     fprintf('-----------------------\n')
     for i=1:11
         accuracy(i) =sum(match(i,:)/N)/rep;
-        fprintf('noise:%f--accuracy:%f\n',noise(i),accuracy(i));
-
     end
+        fprintf('accuracy:%f',accuracy);
 
    
 end

@@ -38,7 +38,7 @@ if (~vecflag)
         % Coopt
         [obj,X,time]=Coopt(@F_GMAD,@nF_GMAD,data,para);
 else
-    error('QAP: X is matrix(M,N), M<=N, can not be set as vector')
+    error('GMAD: X is matrix(M,N), M<=N, can not be set as vector')
 end 
 % result
  result.obj=obj;

@@ -1,4 +1,4 @@
-function data=Sdata(Ngt,Noutlier,sigma)
+function [K,Ag,Ah,ng,nh,numGT]=Sdata(Ngt,Noutlier,sigma)
 % Generate Synthetic data  GM (Graph Matching)
 % Ag,Ah--adjmat A--affmat
 %--------------------------------------------------------------------------
@@ -50,11 +50,10 @@ function data=Sdata(Ngt,Noutlier,sigma)
 %             'A', 'Ag', 'Ah');
 %         idx=idx+1;
 %  end
- data.K=A;
- data.Ag=Ag;
- data.Ah=Ah;
- data.ng=M;
- data.nh=N;
+K=A;
+ng=M;
+nh=N;
+numGT=Ngt;
  
  
 end
