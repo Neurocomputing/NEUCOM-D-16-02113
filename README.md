@@ -33,9 +33,9 @@ solution3=run_Coopt_QAP('toy_QAP');
 # experiment on synthetic graphs matching of GMAD
 exp_GMAD(root_path) % your root_path of LibCoopt
 # experiment on Chinese characters matching of GMAF
-exp_GMAD(root_path)
+exp_GMAF(root_path)
 # experiment on QAPlib  datasets of QAP
-exp_GMAD(root_path)
+exp_QAP(root_path)
 ```
 ## Reference
 [1] Z.-Y. Liu, H.~Qiao, Gnccp—graduated nonconvexityand concavity procedure,
