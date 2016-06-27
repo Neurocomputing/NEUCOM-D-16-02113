@@ -1,4 +1,4 @@
-# LibCooptï¼š A Library for Combinatorial Optimization on Partial Permutation Matrices
+# LibCooptï¼?A Library for Combinatorial Optimization on Partial Permutation Matrices
 
 ## What is **LibCoopt**?
 
@@ -24,11 +24,11 @@ Add all files to your directory.
 Here is a simple example. 
 
 ```matlab
-# demo-LibCoopt of GMAD
+# demo_GMAD
 solution1=run_Coopt_GMAD('toy_GMAD');
-# demo-LibCoopt of GMAF
+# demo_GMAF
 solution2=run_Coopt_GMAF('toy_GMAF');
-# demo-LibCoopt of QAP
+# demo_QAP
 solution3=run_Coopt_QAP('toy_QAP');
 # experiment on synthetic graphs matching of GMAD
 exp_GMAD(root_path) % your root_path of LibCoopt
