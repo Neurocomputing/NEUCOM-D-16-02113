@@ -41,7 +41,7 @@ exp_QAP('asym')% asymmetric QAP
 ## Reference
 [1] M. Zaslavskiy, F. Bach, J.-P. Vert, A path following algorithm for graph matching, in: Image and Signal Processing, Springer, 2008, pp. 329–337.
 
-[2] Lu, K. Huang, C. L. Liu, A fast projected fix-point algorithm for large graph matching , Pattern 86 Recognition 60 (2016) 971–982.
+[2] Y. Lu, K. Huang, C. L. Liu, A fast projected fix-point algorithm for large graph matching , Pattern 86 Recognition 60 (2016) 971–982.
 
 [3] Z.-Y. Liu, H. Qiao, Graduated nonconvexityand concavity procedure, Pattern Analysis and Machine Intelligence, IEEE Transactions on 36~(6) (2014) 1258--1267.
   
