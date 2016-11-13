@@ -39,23 +39,18 @@ exp_QAP('sym') % symmetric QAP
 exp_QAP('asym')% asymmetric QAP
 ```
 ## Reference
-[1] Z.-Y. Liu, H.~Qiao, Gnccpâ€”graduated nonconvexityand concavity procedure,
-  Pattern Analysis and Machine Intelligence, IEEE Transactions on 36~(6) (2014)
-  1258--1267.
+[1] M. Zaslavskiy, F. Bach, J.-P. Vert, A path following algorithm for graph matching, in: Image and Signal Processing, Springer, 2008, pp. 329–337.
+
+[2] Lu, K. Huang, C. L. Liu, A fast projected fix-point algorithm for large graph matching , Pattern 86 Recognition 60 (2016) 971–982.
+
+[3] Z.-Y. Liu, H. Qiao, Graduated nonconvexityand concavity procedure, Pattern Analysis and Machine Intelligence, IEEE Transactions on 36~(6) (2014) 1258--1267.
   
-[2] M.~Zaslavskiy, F.~Bach, J.-P. Vert, A path following algorithm for graph
-  matching, in: Image and Signal Processing, Springer, 2008, pp. 329--337.
+[4]Z.-Y. Liu, H. Qiao, L.Xu, An extended path following algorithm for graph-matching problem, Pattern Analysis and Machine Intelligence, IEEE Transactions on 34~(7) (2012) 1451--1456.
   
-[3]Z.-Y. Liu, H.~Qiao, L.~Xu, An extended path following algorithm for
-  graph-matching problem, Pattern Analysis and Machine Intelligence, IEEE
-  Transactions on 34~(7) (2012) 1451--1456.
+[5] X. Yang, H. Qiao, Z.-Y. Liu, Outlier robust point correspondence based on {GNCCP}, Pattern Recognition Letters 55~(0) (2015) 8--14.
   
-[4] X.~Yang, H.~Qiao, Z.~Liu, Outlier robust point correspondence based on {GNCCP},
-  Pattern Recognition Letters 55~(0) (2015) 8--14.
-  
-[5] Z.~Liu, H.~Qiao, A convex-concave relaxation procedure based subgraph matching
+[6] Z.-Y. Liu, H. Qiao, A convex-concave relaxation procedure based subgraph matching
   algorithm., in: ACML, 2012, pp. 237--252.
   
-[6] R.~E. Burkard, S.~E. Karisch, F.~Rendl, Qaplib--a quadratic assignment problem
-  library, Journal of Global optimization 10~(4) (1997) 391--403.
+[7] R.E. Burkard, S.E. Karisch, F.Rendl, Qaplib--a quadratic assignment problem library, Journal of Global optimization 10(4) (1997) 391--403.
 ```
