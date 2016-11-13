@@ -1,4 +1,4 @@
-# LibCoopt�?A Library for Combinatorial Optimization on Partial Permutation Matrices
+# LibCoopt：A Library for Combinatorial Optimization on Partial Permutation Matrices
 
 ## What is **LibCoopt**?
 
@@ -9,7 +9,7 @@
 ![Framework](https://github.com/RowenaWong/LibCoopt/blob/master/doc/framework.png)
 
 **LibCoopt**  provides a input interface for the objective function and its gradient function which can be customized by the user according to the specific problem. In other words, to use LibCoopt the users only need to design the problem dependent objective function and deduct the corresponding gradient function. 
-**LibCoopt** is mainly implemented by Matlab script, with some computationally intensive part implemented by Mex files. 
+**LibCoopt** is mainly implemented by Matlab script, with some computationally intensive part implemented by Mex files. Currently only the Windows operation system based version is provided.
 The core Matlab function is 
 
 **Solution = Coopt(@F, @nF, Data, Para)**
@@ -31,14 +31,14 @@ solution2=run_Coopt_GMAF('toy_GMAF');
 # demo_QAP
 solution3=run_Coopt_QAP('toy_QAP');
 # experiment on synthetic graphs matching of GMAD
-exp_GMAD(root_path) % your root_path of LibCoopt
+exp_GMAD
 # experiment on Chinese characters matching of GMAF
-exp_GMAF(root_path)
+exp_GMAF
 # experiment on QAPlib  datasets of QAP
-exp_QAP(root_path)
+exp_QAP
 ```
 ## Reference
-[1] Z.-Y. Liu, H.~Qiao, Gnccp—graduated nonconvexityand concavity procedure,
+[1] Z.-Y. Liu, H.~Qiao, Gnccpâ€”graduated nonconvexityand concavity procedure,
   Pattern Analysis and Machine Intelligence, IEEE Transactions on 36~(6) (2014)
   1258--1267.
   
