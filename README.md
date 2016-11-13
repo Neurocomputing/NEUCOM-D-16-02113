@@ -1,4 +1,4 @@
-# LibCoopt�?A Library for Combinatorial Optimization on Partial Permutation Matrices
+# LibCoopt:A Library for Combinatorial Optimization on Partial Permutation Matrices
 
 ## What is **LibCoopt**?
 
@@ -31,14 +31,15 @@ solution2=run_Coopt_GMAF('toy_GMAF');
 # demo_QAP
 solution3=run_Coopt_QAP('toy_QAP');
 # experiment on synthetic graphs matching of GMAD
-exp_GMAD(root_path) % your root_path of LibCoopt
+exp_GMAD
 # experiment on Chinese characters matching of GMAF
-exp_GMAF(root_path)
+exp_GMAF
 # experiment on QAPlib  datasets of QAP
-exp_QAP(root_path)
+exp_QAP('sym') % symmetric QAP
+exp_QAP('asym')% asymmetric QAP
 ```
 ## Reference
-[1] Z.-Y. Liu, H.~Qiao, Gnccp—graduated nonconvexityand concavity procedure,
+[1] Z.-Y. Liu, H.~Qiao, Gnccpâ€”graduated nonconvexityand concavity procedure,
   Pattern Analysis and Machine Intelligence, IEEE Transactions on 36~(6) (2014)
   1258--1267.
   
