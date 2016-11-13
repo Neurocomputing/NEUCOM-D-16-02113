@@ -4,7 +4,7 @@ function F=F_GMAF(x,Data)
 %F=x' * K * x 
 %-------------------------------------------------------------
 %INXUT
-%   X:               vector format of Partial Permutation matrix
+%   x:               vector format of Partial Permutation matrix
 %   Data:
 %     %               Data.K -- dissimilarity matrix of graph G
 %     %               Data.ng -- nodes num of graph G

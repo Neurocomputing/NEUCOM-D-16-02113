@@ -4,7 +4,7 @@ function nF=nF_other(X,PairData)
 %-------------------------------------------------
 %   optimization: min F(X)
 %   Input 
-%    		X: partial permutation matrix, size(X,1)<=size(X,2)
+%       X: partial permutation matrix, size(X,1)<=size(X,2)
 % 		PairData: the rest data  besides X in nF(X)
 %                     saved as PairData's different field
 %   Output:

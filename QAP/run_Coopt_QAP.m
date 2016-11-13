@@ -1,4 +1,4 @@
-function result=run_Coopt_QAP(varargin)
+function solution=run_Coopt_QAP(varargin)
 %Coopt for quadratic assignment problem
 %-----------------------------------------------------------
 % % F(X) and dF(X) is defined in F_QAP and nF_QAP
@@ -11,11 +11,11 @@ function result=run_Coopt_QAP(varargin)
 %       gamma     step of gamma decrease
 %                                   (default=0.001)
 %Output£º
-%       result(obj,time,X)
+%       solution(obj,time,X)
 %----------------------------------------------------------
 % demo
-% result=run_Coopt_QAP('toy_QAP')
-% result=run_Coopt_QAP('toy_QAP',0.002,0.002)
+% solution=run_Coopt_QAP('toy_QAP')
+% solution=run_Coopt_QAP('toy_QAP',0.002,0.002)
 %----------------------------------------------------------
 % @RowenaWong(wangjingjing2014@ia.ac.cn)
 %-----------------------------------------------------------
@@ -45,7 +45,7 @@ else
     error('QAP: X is matrix(M,N), M<=N, can not be set as vector')
 end
 % obj for prior Ag and Ah ...
-result.obj=obj*Ag_max*Ah_max;
-result.X=X;
-result.time=time;
+solution.obj=obj*Ag_max*Ah_max;
+solution.X=X;
+solution.time=time;
 end

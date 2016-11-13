@@ -1,15 +1,28 @@
 function exp_GMAF(varargin)
-% evaluated libcoopt on GMAF 
-% input: rootpath (optional)
-%  RowenaWong( wangjingjing2014@ia.ac.cn) June.2016
+% RUN_EXPERIMENT_GMAF(varagin)
+%-----------------------------------------------------------
+%This example demos how to run libcoopt for GMAF (the affinity matrix based subgraph matching) automatcially
+%Examples:
+%    exp_GMAF
+%    exp_GMAF(root_path) root_path is the directory of libcoopt 
+% eg.   'H:\Codes\newlibcoopt\'
 
+%LIBCOOPT 2016 Contact: wangjingjing2014@ia.ac.cn
+%------------------------------------------------------------
 if nargin<1
-    root_path='E:\LibCoopt\';
+    mpath=which('Coopt.m');
+    i=strfind(mpath,'\');
+    root_path=mpath(1:i(end));
+else 
+    if nargin==1
+        root_path=varargin{1};
+    else
+        disp('Error')
+        return
+    end 
 end 
-if nargin==1
-    root_path=varargin{1}
-end 
-fprintf('experiment of GMAF on  chinese characters 1 vs 2!\n');
+
+disp('experiment of GMAF on  chinese characters 1 vs 2!');
 data_path= [root_path  'Experiment\Dataset\data_chrct'];
 chr1=load([data_path '\' num2str(1)]);
 chr2=load([data_path '\' num2str(2)]);
@@ -23,8 +36,8 @@ P0=eye(chr1.N,chr1.N);
 Ps=result.X;
 % show the matching result
 Nmatch=sum(sum(result.X(1:numGT,1:numGT).*eye(chr1.N,chr1.N)));
-fprintf('Nmatch:%d\n',Nmatch);
-fprintf('numGT:%d\n',numGT);
+fprintf('Nmatch:%d\n',Nmatch); % matched point number
+fprintf('numGT:%d\n',numGT); % ground truth
 ChrMatchShow(chr1,chr2,P0,Ps);
 
 end 

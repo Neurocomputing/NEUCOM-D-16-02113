@@ -1,4 +1,4 @@
-function [Ag,Ah,ng,nh]=ReadQAPFile(filename)
+function [Ag,Ah,ng,nh]=Read_QAP(filename)
 % Read Ag and Ah from QAPlib file
  fid = fopen(filename,'rt');  %
  if(fid<=0)
@@ -6,7 +6,7 @@ function [Ag,Ah,ng,nh]=ReadQAPFile(filename)
      return;
  end
  tline = fgetl(fid);
- n=str2num(tline);
+ n=str2num(tline);  
  Ag=fscanf(fid,'%f',[n,n]);
  Ah=fscanf(fid,'%f',[n,n]);
  ng=n;

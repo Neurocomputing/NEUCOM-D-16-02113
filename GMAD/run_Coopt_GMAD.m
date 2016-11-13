@@ -1,4 +1,4 @@
-function result=run_Coopt_GMAD(varargin)
+function solution=run_Coopt_GMAD(varargin)
 %Coopt for GMAD   
 %-----------------------------------------------------------
 % % F(X) and dF(X) is defined in F_GMAD and nF_GMAD
@@ -11,11 +11,11 @@ function result=run_Coopt_GMAD(varargin)
 %       gamma     step of gamma decrease
 %                                   (default=0.001)  
 %Output£º
-%       result(obj,time,X)
+%       solution(obj,time,X)
 %----------------------------------------------------------
 % demo:
-% result=run_Coopt_GMAD('toy_GMAD')  
-% result=run_Coopt_GMAD('toy_GMAD',0.002,0.002)
+% solution=run_Coopt_GMAD('toy_GMAD')  
+% solution=run_Coopt_GMAD('toy_GMAD',0.002,0.002)
 %----------------------------------------------------------
 % @RowenaWong(wangjingjing2014@ia.ac.cn)
 %-----------------------------------------------------------
@@ -41,9 +41,9 @@ else
     error('GMAD: X is matrix(M,N), M<=N, can not be set as vector')
 end 
 % result
- result.obj=obj;
- result.X=X;
- result.time=time;
+ solution.obj=obj;
+ solution.X=X;
+ solution.time=time;
 end 
 
  

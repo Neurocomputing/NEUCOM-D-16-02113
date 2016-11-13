@@ -28,16 +28,20 @@ if pairdata.ng > pairdata.nh
 end
 
 % Generate E matrix of TSP, add ng\nh filed
-    n=pairdata.n;
+    n=pairdata.ng;
     pairdata.E=E_gen(n);
     pairdata.ng=n;
     pairdata.nh=n;
+    pairdata.vecflag=vecflag;
     %linear transformation of D 
     maxD=max(max(pairdata.D));
     pairdata.D=pairdata.D/maxD;
+   
 % run Coopt
     [result.obj, result.X,result.time] = Coopt(@F_TSP,@nF_TSP,pairdata,para);
     result.obj=result.obj*maxD;
+    fprintf('OBJ:%10.2f\n',result.obj);
+    fprintf('OPT:%10.2f',pairdata.opt);
 % GENERATE path from result.X 
     path=1:1:n;
     for i=1:n

@@ -1,17 +1,18 @@
 QAPlib
 %--------------------------------------------------------------------------
 Choose 8 symmetric and 8 asymmetric data from QAPlib benchmark datasets.[1]
-symmetric qap optimal values are saved in opt_sym
-asymmetric qap optimal values are saved in opt_asym 
+symmetric qap optimal values are saved in qap_sym_opt
+asymmetric qap optimal values are saved in qap_asym_opt 
 The complete QAPlib benchmark dataset can be found in [2]
 %--------------------------------------------------------------------------
-you can get QAP data by :[Ag,Ah,ng,nh]=Read_QAP(DataPath)
+The users can get QAP data by :[Ag,Ah,ng,nh]=Read_QAP(DataPath)
     Ag: matrix (MxM)
     Ah  matrix (NxN)
     ng  M
     nh  N  (M=N)
-experiment: 
-        exp_QAP;
+The users can run experiments of QAP by: 
+        exp_QAP('sym');
+        exp_QAP('asym');
 %--------------------------------------------------------------------------
 reference:
 [1] R.~E. Burkard, S.~E. Karisch, F.~Rendl, Qaplib--a quadratic assignment problem
