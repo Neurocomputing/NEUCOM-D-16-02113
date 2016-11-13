@@ -35,7 +35,8 @@ exp_GMAD
 # experiment on Chinese characters matching of GMAF
 exp_GMAF
 # experiment on QAPlib  datasets of QAP
-exp_QAP
+exp_QAP('sym') % for symmetric QAP
+exp_QAP('asym') % for asymmetric QAP
 ```
 ## Reference
 [1] Z.-Y. Liu, H.~Qiao, Gnccpâ€”graduated nonconvexityand concavity procedure,
