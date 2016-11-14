@@ -17,7 +17,7 @@ The core Matlab function is
 where *Solution* is the final combinatorial optimization solution including the minimal point, objective value, and running time. The first two inputs *@F* and *@nF* are the function handles of the customized objective function and its gradient function. The third input *Data* is the problem related data. And *Para* is the parameter structure. 
 
 ## Installation
-Add all files to your directory.
+Add LibCoopt and its all subfolders to path.
 
 ## Example
 
